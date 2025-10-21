@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* ||VARIABLES */
+:root {
+    --BGCOLOR: #171717;
+    --COLOR-PRIMARY: #DFD3C3;
+    --COLOR-SECONDARY: #3A86FF;
+    --COLOR-ACCENT: #fff;
+}
+
+body {
+    background: var(--BGCOLOR);
+    color: var(--COLOR-PRIMARY);
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* ||TOP PAGE */
+/* Menu */
+header {
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.03));
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 3rem 3rem;
+    z-index: 1;
+}
+
+p a {
+    font-size: 3.2rem;
+    padding: 1rem;
+}
+
+ul {
+    margin: 0.5rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+p a , li a {
+    color: var(--COLOR-PRIMARY);
+    text-decoration: none;
+}
+
+p a:visited, 
+a:visited {
+    color: var(--COLOR-PRIMARY);
+}
+
+p a:hover,
+a:hover {
+    color: var(--COLOR-ACCENT);
+}
+
+/* image on top page */
+.image-bg {
+    width: 100%;
+    height: 800px;
+    background-image: url("image_firstpage/top_page/image_school/school_book.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ||MAIN CONTENT */
+/* first text */
+.toppage-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    align-items: center;
+    gap: 4rem;
+    width: 95%;
+    margin-inline: auto;
+    text-align: left;
+}
+
+.toppage-text h1 {
+    font-size: 3.5rem;
+    color: var(--COLOR-ACCENT);
+    text-decoration: underline;
+    margin: 0 0 3rem 0;
+    transform: translateX(-21%);
+}
+
+.toppage-text p {
+    font-size: 2.3rem;
+    transform: translateX(-21%);
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* image */
+.toppage-text img {
+    width: 45%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+
+/* ||CONTACT */
+.contact {
+    margin: 4rem 7.8rem 3rem 4.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+div .image-contact {
+    width: 32px;
+}
+
+.logo-contact {
+    display: flex;
+    gap: 3rem;
+}
+
+h3 {
+    color: var(--COLOR-SECONDARY);
+}
+
+h3 a {
+    color: var(--COLOR-ACCENT);
+    text-decoration: none;
+}
+
+
+/* ||Mobile */
+@media (max-width: 600px) {
+    
+    /* ||TOP PAGE */
+    /* Menu */
+    header {
+        font-size: 1.5rem;
+    }
+    
+    p a {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+    
+    ul {
+        margin: 0.3rem;
+    }
+
+    /* image on top page */
+    .image-bg {
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+    }
+
+
+    /* ||MAIN CONTENT */
+    /* first text */
+    .toppage-text {
+        margin-top: 4rem;
+        gap: 4rem;
+        width: 70%;
+    }
+
+    .toppage-text h1 {
+        font-size: 2.5rem;
+        margin: 0 0 3rem 0;
+        transform: translateX(-10%);
+    }
+
+    .toppage-text p {
+        font-size: 1.8rem;
+        transform: translateX(-10%);
+    }
+
+    /* image */
+    .toppage-text img {
+        width: 120%;
+    }
+
+
+    /* ||CONTACT */
+    .contact {
+        margin: 3rem 7.8rem 18rem 7rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;  
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin-top: 4rem;
+        margin-right: -1rem;
+    }
+
+    div .image-contact {
+        width: 32px;
+    }
+
+    .logo-contact {
+        display: flex;
+        gap: 2rem;
+        transform: translateY(-25%);
+    }
+}
+
+
+/* ||TABLAT */
+@media (min-width: 601px) and (max-width: 1024px) {
+    
+    /* ||TOP PAGE */
+    /* Menu */
+    header {
+        font-size: 2rem;
+    }
+    
+    p a {
+        font-size: 2.5rem;
+        padding: 0.5rem;
+    }
+ 
+    ul {
+        margin: 0.3rem;
+    }
+
+    /* image on top page */
+    .image-bg {
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+    }
+
+
+    /* ||MAIN CONTENT */
+    /* first text */
+    .toppage-text {
+        margin-top: 4rem;
+        gap: 4rem;
+        width: 70%;
+    }
+
+    .toppage-text h1 {
+        font-size: 2.5rem;
+        margin: 0 0 3rem 0;
+    }
+
+    .toppage-text p {
+        font-size: 2rem;
+    }
+
+    /* image */
+    .toppage-text img {
+        width: 100%;
+    }
+
+    
+    /* ||CONTACT */
+    .contact {
+        margin: -5rem 7.8rem 60rem 4.2rem;
+        padding: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .logo-contact {
+        display: flex;
+        gap: 3rem;
+    }
+}

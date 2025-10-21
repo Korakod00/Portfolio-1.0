@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* ||VARIABLES */
+:root {
+    --BGCOLOR: #171717;
+    --COLOR-PRIMARY: #DFD3C3;
+    --COLOR-SECONDARY: #3A86FF;
+    --COLOR-ACCENT: #fff;
+}
+
+body {
+    background-color: var(--BGCOLOR);
+    color: var(--COLOR-PRIMARY);
+    margin: 2rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* ||TOP PAGE */
+/* Menu */
+header {
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.03));
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 3rem 3rem;
+    z-index: 1;
+}
+
+p a {
+    font-size: 3.2rem;
+    padding: 1rem;
+}
+
+ul {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    list-style-type: none;
+}
+
+p a, li a {
+    color: var(--COLOR-PRIMARY);
+    text-decoration: none;
+}
+
+p a:visited,
+a:visited {
+    color: var(--COLOR-PRIMARY);
+}
+
+p a:hover,
+a:hover {
+    color: var(--COLOR-ACCENT);
+}
+
+/* |image & text on top page */
+.first-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 7.5rem 3rem 4rem;
+    margin-top: 12rem;
+}
+
+/* text */
+.first-text {
+    font-size: 3rem;
+}
+
+div h2 {
+    color: var(--COLOR-ACCENT)
+}
+
+/* image */
+.animation {
+    position: relative;
+    width: 475px;
+    height: 475px;
+    overflow: hidden;
+}
+
+.bg {
+    animation: 1.3s cubic-bezier(0.3, 1, 0.3, 1) 0.5s forwards bg-reveal;
+    opacity: 0;
+}
+
+.nine-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: 1.1s cubic-bezier(0.2, 1, 0.3, 1) 2s forwards img-reveal;
+}
+
+/* animation image */
+@keyframes bg-reveal {
+    0% {
+        clip-path: inset(100% 0 0 0);
+        opacity: 0;
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+        opacity: 1;
+    }
+}
+
+@keyframes img-reveal {
+    0% {
+        clip-path: inset(100% 0 0 0);
+        opacity: 0;
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+        opacity: 1;
+    }
+}
+
+
+/* ||IMG + TEXT IN MAIN CONTENT*/
+/* image */
+.all {
+    margin-top: 7rem;
+}
+
+.uni-act {
+    display:grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 2rem;
+}
+
+figure .all-img {
+    width: 650px;
+    height: 375px;
+    border-radius: 1.3rem;
+    display: block;
+    margin: auto;
+    transition: all 0.25s linear;
+    object-fit: cover;
+}
+
+.right {
+    margin: 0 0 0.5rem 7rem;
+}
+
+.left {
+    margin: 0 7rem 0 0;
+}
+
+figure:hover .all-img {
+    filter: brightness(50%);
+}
+
+figure {
+    position: relative;
+}
+
+/* text heading */
+.title-topic {
+    margin-left: 4.2rem;
+    padding: 3rem;
+    font-size: 4rem;
+    color: var(--COLOR-ACCENT);
+}
+
+/* text Subtopic*/
+.text-all {
+    font-size: 5rem;
+    color: var(--COLOR-ACCENT);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transition: all 0.25s linear;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    text-align: center;
+}
+
+figure:hover .text-all {
+    opacity: 1;
+}
+
+/* other camp and act */
+.other-project {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right_arrow {
+    font-size: 2rem;
+    padding: 0;
+    margin: 2rem 7.6rem 0 0;
+    text-decoration: none;
+}
+
+/* ||CONTACT */
+.contact {
+    margin: 0 7.8rem 3rem 4.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+div .image-contact {
+    width: 32px;
+}
+
+.logo-contact {
+    display: flex;
+    gap: 3rem;
+}
+
+h3 {
+    color: var(--COLOR-SECONDARY);
+}
+
+h3 a {
+    color: var(--COLOR-ACCENT);
+    text-decoration: none;
+}
+
+
+/* ||Mobile */
+@media (max-width: 600px) {
+    
+    /* ||TOP PAGE */
+    /* Menu */
+    header {
+        font-size: 1.5rem;
+    }
+    
+    p a {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+    
+    ul {
+        margin: 0.3rem;
+    }
+
+    
+    /* |image & text on top page */
+    .first-page {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        margin-top: 10rem;
+        flex-direction: column;
+    }
+
+    .nine-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*text*/
+    .first-text {
+        font-size: 1.3rem;
+    }
+
+    /* image */
+    .animation {
+        width: 300px;
+        height: 300px;
+        margin-top: 3rem;
+    }
+
+
+    /* ||IMG + TEXT IN MAIN CONTENT*/
+    /* image */
+    .uni-act {
+        grid-template-columns: 1fr;
+    }
+    
+    figure .all-img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .right {
+        margin: 0 0 0 0;
+    }
+
+    .left {
+        margin: 0 0 0 0;
+    }
+    
+    /* text heading */
+    .title-topic {
+        margin-left: 4rem;
+        padding: 3rem;
+        font-size: 2.5rem;
+    }
+
+    /* text Subtopic*/
+    .text-all {
+        font-size: 3rem;
+    }
+    
+    /* other camp and act */
+    .right_arrow {
+        font-size: 1.8rem;
+        padding: 0;
+        margin: 2rem 3rem 0 0;
+    }
+    
+
+    /* ||CONTACT */
+    .contact {
+        margin: 0 7.8rem 18rem 7rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;  
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin-top: 4rem;
+        margin-right: -1rem;
+    }
+
+    div .image-contact {
+        width: 32px;
+    }
+
+    .logo-contact {
+        display: flex;
+        gap: 2rem;
+        transform: translateY(-25%);
+    }
+}
+
+
+/* ||TABLAT */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    /* ||TOP PAGE */
+    /* Menu */
+    header {
+        font-size: 2rem;
+    }
+    
+    p a {
+        font-size: 2.5rem;
+        padding: 0.5rem;
+    }
+ 
+    ul {
+        margin: 0.3rem;
+    }
+
+    /* |image & text on top page */
+    .first-page {
+        padding: 2rem;
+        margin-top: 10rem;
+    }
+
+    .nine-img {
+        width: 100%;
+        height: 100%;   
+    }
+
+    /* text */
+    .first-text {
+        font-size: 2rem;
+    }
+
+    /* image */
+    .animation {
+        width: 400px;
+        height: 350px;
+        margin-top: 3rem;
+    }
+    
+    /* ||IMG + TEXT IN MAIN CONTENT*/
+    /* image */
+    .uni-act {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    figure .all-img {
+        width: 100%;
+        height: 275px;
+    }
+
+    .right {
+        margin: 0 0 0 0;
+    }
+
+    .left {
+        margin: 0 0 0 0;
+    }
+    
+    /* text heading */
+    .title-topic {
+        margin-left: 4rem;
+        padding: 3rem;
+        font-size: 2.8rem;
+    }
+
+    /* text Subtopic*/
+    .text-all {
+        font-size: 4rem;
+    }
+    
+    /* other camp and act */
+    .right_arrow {
+        font-size: 1.8rem;
+        padding: 0;
+        margin: 2rem 0.5rem 0 0;
+    }
+    
+    
+    /* ||CONTACT */
+    .contact {
+        margin: -5rem 7.8rem 60rem 4.2rem;
+        padding: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .logo-contact {
+        display: flex;
+        gap: 3rem;
+    }
+}
