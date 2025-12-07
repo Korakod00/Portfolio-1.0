@@ -75,7 +75,7 @@ a:hover {
 .image-bg {
     width: 100%;
     height: 800px;
-    background-image: url("image_firstpage/top_page/image_uni/uni_tobeit68.jpg");
+    background-image: url("../image/image_uni/uni_itcamp.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -99,12 +99,12 @@ a:hover {
     color: var(--COLOR-ACCENT);
     text-decoration: underline;
     margin: 0 0 3rem 0;
-    transform: translateX(-7%);
+    transform: translateX(-8.8%);
 }
 
 .toppage-text p {
     font-size: 2.3rem;
-    transform: translateX(-7%);
+    transform: translateX(-8.8%);
 }
 
 .image-wrapper {
@@ -120,9 +120,9 @@ a:hover {
 }
 
 
-/* ||Project */
+/* ||NETWORK */
 /* text */
-.HopMates {
+.network {
     background-color: #272727;
     border-radius: 15px;
     width: 60%;
@@ -134,28 +134,38 @@ a:hover {
     margin-top: 8%;
 }
 
-.HopMates p {
+.network p {
     font-size: 2.3rem;
     margin-top: 7rem;
 }
 
 /* image */
-.HopMates-image {
-    width: 70%;
-    height: 60vh;
-    display: flex;
-    justify-content: center;
+.network-image {
+    width: 80%;
+    height: 68vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.ux-ui {
-    width: 75%;
-    height: 55vh;
-    object-fit: cover;
-    border-radius: 1rem;
+.cpt {
+    width: 120%;
+    height: auto;
+}
+
+.rack {
+    width: 82.5%;
+    height: auto;
+    transform: translateX(26%);
+}
+
+.diagram {
+    width: 120%;
+    height: auto;
+    transform: translateY(-100%);
 }
 
 
-/* REWARD */
+/* ||REWARD */
 .trophy {
     display: flex;
     justify-content: space-between;
@@ -218,9 +228,8 @@ a:hover {
 
 .five {
     width: 65%;
-    height: 98.93vh;
+    height: auto;
     transform: translateY(-5.3%);
-    object-fit: cover;
 }
 
 .six {
@@ -228,13 +237,13 @@ a:hover {
     height: 105vh;
     transform: translate(0.5%, 0.8%);
     object-fit: cover;
+    filter: brightness(125%);
 }
 
 .seven {
     width: 38%;
-    height: 102.7vh;
+    height: auto;
     transform: translateY(-4.7%);
-    object-fit: cover;
 }
 
 .eight {
@@ -334,34 +343,45 @@ h3 a {
 
     /* ||NETWORK */
     /* text */
-    .HopMates {
+    .network {
         width: 80%;
-        height: 70vh;
+        height: 58vh;
         gap: 4rem;
         margin-top: 20%;
     }
 
-    .HopMates p {
+    .network p {
         font-size: 1.8rem;
-        margin: 4.5rem 2rem 0 2rem;
-        width: 80%;
+        margin: 3rem 2rem 0 2rem;
     }
 
     /* image */
-    .HopMates-image {
+    .network-image {
         width: 100%;
         height: 68vh;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .ux-ui {
-        width: 180%;
+    .cpt {
+        width: 110%;
         height: auto;
-        transform: translateX(5%);
+        transform: translateX(4.5%);
     }
 
-    
+    .rack {
+        width: 76.7%;
+        height: auto;
+        transform: translateX(23.5%);
+    }
+
+    .diagram {
+        width: 110%;
+        height: auto;
+        transform: translate(4.5%, -100.5%);
+    }
+
+
     /* ||REWARD */
     .trophy {
         flex-direction: column;
@@ -401,7 +421,6 @@ h3 a {
     .two {
         width: 39.3%;
         height: 23.5vh;
-        object-fit: cover;
         transform: translate(0.5%, 21.2%);
     }
 
@@ -419,7 +438,7 @@ h3 a {
 
     .five {
         width: 67%;
-        height: 23.2vh;
+        height: auto;
         transform: translateY(-6.8%);
     }
 
@@ -431,7 +450,7 @@ h3 a {
 
     .seven {
         width: 40%;
-        height: 24.7vh;
+        height: auto;
         transform: translateY(-6.2%);
     }
 
@@ -524,32 +543,44 @@ h3 a {
     }
 
 
-    /* ||HOPMATES */
+    /* ||NETWORK */
     /* text */
-    .HopMates {
+    .network {
         width: 80%;
-        height: 56vh;
+        height: 46vh;
         gap: 4rem;
         margin-top: 20%;
     }
 
-    .HopMates p {
+    .network p {
         font-size: 1.8rem;
         margin: 6rem 2rem 0 2rem;
     }
 
     /* image */
-    .HopMates-image {
+    .network-image {
         width: 80%;
         height: 68vh;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .ux-ui {
-        width: 160%;
+    .cpt {
+        width: 110%;
         height: auto;
-        transform: translateX(13%);
+        transform: translateX(4.5%);
+    }
+
+    .rack {
+        width: 76.7%;
+        height: auto;
+        transform: translateX(22.5%);
+    }
+
+    .diagram {
+        width: 110%;
+        height: auto;
+        transform: translate(4.5%, -100.5%);
     }
 
 
@@ -602,7 +633,7 @@ h3 a {
 
     .five {
         width: 67%;
-        height: 34.9vh;
+        height: auto;
         transform: translateY(-5%);
     }
 
@@ -614,7 +645,7 @@ h3 a {
 
     .seven {
         width: 40%;
-        height: 37.05vh;
+        height: auto;
         transform: translateY(-4.3%);
     }
 

@@ -75,7 +75,7 @@ a:hover {
 .image-bg {
     width: 100%;
     height: 800px;
-    background-image: url("image_firstpage/top_page/image_school/school_orientation.jpg");
+    background-image: url("../image/image_school/school_orientation.jpg");
     background-size: cover;
     background-position: center;
 }
